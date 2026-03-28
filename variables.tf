@@ -3,5 +3,7 @@ variable "aws_region" {
 }
 
 variable "queue_name" {
-  default = "fila-terraform-teste"
+  type        = string
+  description = "Nome base da fila SQS principal"
+  default     = "fila-terraform-teste"
 }
